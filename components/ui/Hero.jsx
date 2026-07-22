@@ -3,28 +3,27 @@ import { Button } from './Button';
 import './Hero.css';
 
 export const Hero = ({
-  badgeText = "DESIGN SYSTEM DRIVEN",
-  title = "Designing Intent-First Digital Experiences",
-  description = "Bridging brand philosophy, design token automation, and scalable component architecture for high-growth digital platforms.",
+  badgeText = "DESIGN & STRATEGY CONSULTANCY",
+  title = "Institutional Design & Experience Strategy",
+  description = "UniKwan combines human-centric experience strategy with robust digital architecture to build transformative platforms.",
   primaryCtaText = "Explore Our Work",
-  secondaryCtaText = "Our Philosophy",
+  secondaryCtaText = "Get in Touch",
   onPrimaryClick,
   onSecondaryClick,
 }) => {
   return (
-    <section className="hero">
-      <div className="hero__container">
+    <section className="unikwan-hero">
+      <div className="unikwan-hero__container">
         {badgeText && (
-          <div className="hero__badge">
-            <span className="hero__badge-dot"></span>
-            <span className="hero__badge-text">{badgeText}</span>
+          <div className="unikwan-hero__badge">
+            <span className="unikwan-hero__badge-text">{badgeText}</span>
           </div>
         )}
 
-        <h1 className="hero__title">{title}</h1>
-        <p className="hero__description">{description}</p>
+        <h1 className="unikwan-hero__title">{title}</h1>
+        <p className="unikwan-hero__description">{description}</p>
 
-        <div className="hero__actions">
+        <div className="unikwan-hero__actions">
           <Button variant="primary" size="lg" onClick={onPrimaryClick}>
             {primaryCtaText}
           </Button>

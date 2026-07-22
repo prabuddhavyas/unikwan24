@@ -1,0 +1,21 @@
+# UNIKWAN DESIGN SYSTEM GUARDRAILS
+
+You are working on the Unikwan Design System (unikwan24). 
+Always enforce these rules strictly:
+
+1. ZERO HARDCODED STYLES:
+   - NEVER output raw hex colors (e.g., #0066FF).
+   - NEVER output arbitrary pixel spacing, margins, or paddings (e.g., padding: 13px).
+   - ALWAYS use CSS variables from `build/css/variables.css` or token imports from `build/js/tokens.js`.
+
+2. TOKEN HIERARCHY:
+   - Components MUST consume Semantic or Component tokens.
+   - Do NOT use raw primitive tokens directly in components.
+
+3. PROPS & COMPONENT RULES:
+   - Component props must use strict variants (e.g., size="sm" | "md" | "lg").
+   - Do NOT use inline style fallbacks like var(--color-primary, #0055FF).
+
+4. SOURCE OF TRUTH:
+   - Tokens source: `tokens/primitives.json`
+   - Generated CSS output: `build/css/variables.css`

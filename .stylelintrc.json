@@ -1,0 +1,15 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-declaration-strict-value"
+  ],
+  "rules": {
+    "scale-unlimited/declaration-strict-value": [
+      ["/color/", "fill", "stroke", "font-size", "margin", "padding", "border-radius"],
+      {
+        "ignoreValues": ["0", "auto", "inherit", "transparent", "currentColor"],
+        "message": "❌ Design System Error: Hardcoded value detected! You must use a CSS token variable (e.g., var(--color-primary-500))."
+      }
+    ]
+  }
+}

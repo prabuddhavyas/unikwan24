@@ -6,6 +6,12 @@
     "build:tokens": "npx style-dictionary build",
     "tokens:extract": "node extract-tokens.mjs",
     "tokens:build": "style-dictionary build",
-    "build": "npm run tokens:extract && npm run tokens:build"
+    "build": "npm run tokens:extract && npm run tokens:build && npm run lint:css",
+    "lint:css": "stylelint \"**/*.css\""
+  },
+  "devDependencies": {
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-declaration-strict-value": "^1.11.1"
   }
 }

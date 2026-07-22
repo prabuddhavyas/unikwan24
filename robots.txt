@@ -1,0 +1,43 @@
+# ----------------------------------------
+# Robots.txt 
+# ----------------------------------------
+
+User-agent: *
+Allow: /
+
+# Block internal/system folders if needed
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://www.unikwan.com/sitemap.xml
+
+
+# ----------------------------------------
+# AI Crawlers
+# ----------------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+
+# ----------------------------------------
+# Content Signals
+# ----------------------------------------
+
+Content-Signal: ai-train=no
+Content-Signal: search=yes
+Content-Signal: ai-input=yes

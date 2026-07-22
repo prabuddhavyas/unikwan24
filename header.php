@@ -1,0 +1,62 @@
+<?php
+  // for live site
+
+  //$baseUrl = "https://www.unikwan.com/";
+  //$currentUrl = $_SERVER['REQUEST_URI'] === '/success-stories/' || $_SERVER['REQUEST_URI'] === '/articles/' || $_SERVER['REQUEST_URI'] === '/free-templates-and-ebooks/' ? 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] : '';
+
+  // for fileZilla upload
+  // $baseUrl = "https://www.unikwan.com/unikwan-projects/2024/unikwan24/";
+  // $currentUrl = $_SERVER['REQUEST_URI'] === '/unikwan-projects/2024/unikwan24/success-stories/' || $_SERVER['REQUEST_URI'] === '/unikwan-projects/2024/unikwan24/articles/' || $_SERVER['REQUEST_URI'] === '/unikwan-projects/2024/unikwan24/free-templates-and-ebooks/' ? 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] : '';
+
+  // for localhost testing
+  $baseUrl = "http://localhost/unikwan24/";
+  $currentUrl = $_SERVER['REQUEST_URI'] === '/unikwan24/success-stories/' || $_SERVER['REQUEST_URI'] === '/unikwan24/articles/' || $_SERVER['REQUEST_URI'] === '/unikwan24/free-templates-and-ebooks/' ? 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] : '';
+?>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="<?php echo $baseUrl; ?>favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="<?php echo $baseUrl; ?>favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap" rel="stylesheet">
+<link href="<?php echo $baseUrl; ?>assets/css/unikwan.css?v=0.5" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+<!-- Begin Organization Schema -->
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "UniKwan Innovations",
+  "alternateName": "UniKwan",
+  "url": "https://www.unikwan.com/",
+  "logo": "https://www.unikwan.com/assets/images/logo.png",
+  "image": "https://www.unikwan.com/assets/images/logo.png",
+  "description": "A high-end UI/UX strategy and design hub in Bangalore. We blend human-centered creativity with AI-driven efficiency to build future-proof digital products and citizen services. By leveraging AI workflows, we deliver rapid turnarounds and deep-tech experiences for our long-term global partners.",
+  "foundingDate": "2012",
+  "telephone": "+91 9686568578",
+  "email": "info@unikwan.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2nd Floor, 18, Ramanashree Arcade, Mahatma Gandhi Road",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "KA",
+    "postalCode": "560001",
+    "addressCountry": "IN"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Prabuddha Vyas"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/unikwan",
+    "https://clutch.co/profile/unikwan"
+  ]
+}
+</script>
+<!-- End Organization Schema -->
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->

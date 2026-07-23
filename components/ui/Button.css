@@ -9,24 +9,22 @@
   border-radius: var(--radius-md, 6px);
 }
 
-/* Variants using semantic color tokens */
 .btn--primary {
-  background-color: var(--color-primary-500, #0066ff);
-  color: #ffffff;
+  background-color: var(--global-color-color-extracted-14, #ffffff);
+  color: var(--global-color-color-extracted-2, #f2f2f2);
 }
 
 .btn--secondary {
-  background-color: var(--color-neutral-800, #1e293b);
-  color: #ffffff;
+  background-color: var(--global-color-color-extracted-6, #3e4147);
+  color: var(--global-color-color-extracted-2, #f2f2f2);
 }
 
 .btn--outline {
   background-color: transparent;
-  border-color: var(--color-neutral-300, #cbd5e1);
-  color: var(--color-neutral-900, #0f172a);
+  border-color: var(--global-color-color-extracted-13, #c7c3cc);
+  color: var(--global-color-color-extracted-5, #343638);
 }
 
-/* Sizes using spacing tokens */
 .btn--sm {
   padding: var(--spacing-xs, 4px) var(--spacing-sm, 8px);
   font-size: 0.875rem;

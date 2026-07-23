@@ -41,7 +41,14 @@
       "Bash(node desktop-dropdown-check.js)",
       "Bash(python3 -c ' *)",
       "Bash(node both-dropdowns-check.js)",
-      "Bash(node mobile-resources-check.js)"
+      "Bash(node mobile-resources-check.js)",
+      "Bash(grep -n '\"color-extracted-[0-9]*\": {$' -A1 \"/home/prabuddha/Downloads/unikwan website/unikwan24/tokens/primitives.json\")",
+      "Bash(google-chrome --headless --disable-gpu --no-sandbox --screenshot=/tmp/claude-1000/-home-prabuddha-Downloads-unikwan-website-unikwan24/10b3ba6f-adbc-4bc1-be82-24c9ca7a8db4/scratchpad/post-fix-header.png --window-size=1440,900 --hide-scrollbars http://localhost:8000/unikwan24/)",
+      "Bash(cp tokens/primitives.json /tmp/claude-1000/-home-prabuddha-Downloads-unikwan-website-unikwan24/10b3ba6f-adbc-4bc1-be82-24c9ca7a8db4/scratchpad/primitives-before.json)",
+      "Bash(node extract-tokens.mjs)",
+      "Bash(nohup php -S localhost:6006)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:6006/index.html)",
+      "Bash(curl -s http://localhost:6006/index.json)"
     ]
   }
 }

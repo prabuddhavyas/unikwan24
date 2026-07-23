@@ -7,7 +7,7 @@
     "tokens:extract": "node extract-tokens.mjs",
     "tokens:build": "style-dictionary build",
     "build": "npm run tokens:extract && npm run tokens:build && npm run lint:css",
-    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css": "stylelint \"**/*.css\" --formatter compact",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

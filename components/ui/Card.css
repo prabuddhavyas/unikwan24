@@ -2,18 +2,17 @@
   padding: var(--spacing-lg, 24px);
   border-radius: var(--radius-lg, 16px);
   transition: all 0.2s ease-in-out;
-  color: var(--color-neutral-100, #f1f5f9);
+  color: var(--global-color-color-extracted-2, #f2f2f2);
 }
 
-/* Card Variants */
 .card--default {
-  background-color: var(--color-neutral-900, #0f172a);
-  border: 1px solid var(--color-neutral-800, #1e293b);
+  background-color: var(--global-color-color-extracted-66, #14161b);
+  border: 1px solid var(--global-color-color-extracted-70, #616369);
 }
 
 .card--elevated {
-  background-color: var(--color-neutral-800, #1e293b);
-  border: 1px solid var(--color-neutral-700, #334155);
+  background-color: var(--global-color-color-extracted-67, #52525b);
+  border: 1px solid var(--global-color-color-extracted-70, #616369);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
 }
 
@@ -31,13 +30,13 @@
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--global-color-color-extracted-14, #ffffff);
 }
 
 .card__subtitle {
   margin: var(--spacing-xs, 4px) 0 0 0;
   font-size: 0.875rem;
-  color: var(--color-neutral-200, #e2e8f0);
+  color: var(--global-color-color-extracted-3, #dddddd);
   opacity: 0.8;
 }
 

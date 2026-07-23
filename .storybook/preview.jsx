@@ -1,19 +1,22 @@
-/** @type { import('@storybook/react-vite').Preview } */
-const preview = {
-  parameters: {
-    controls: {
-      matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
-      },
-    },
+import React from 'react';
+import '../assets/css/unikwan.css';
+import '../build/css/variables.css';
 
-    a11y: {
-      // 'todo' - show a11y violations in the test UI only
-      // 'error' - fail CI on a11y violations
-      // 'off' - skip a11y checks entirely
-      test: "todo"
-    }
+/** @type { import('@storybook/react').Preview } */
+const preview = {
+  decorators: [
+    (Story) => (
+      <div className="dark_theme_wrapper">
+        <Story />
+      </div>
+    ),
+  ],
+  parameters: {
+    layout: 'fullscreen',
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: '#0a0d14' }],
+    },
   },
 };
 

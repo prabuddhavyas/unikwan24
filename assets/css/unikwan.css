@@ -55,6 +55,12 @@ body {
   font-weight: 400;
 }
 
+.dark_theme_wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0d14 0%, #151b2a 100%);
+  color: var(--global-color-color-extracted-16);
+}
+
 .bsk_design_system_section .stream_image_container::-webkit-scrollbar,
 .edprime_design_system_section .stream_image_container::-webkit-scrollbar,
 .faq_categeory_outer_container::-webkit-scrollbar,
@@ -208,7 +214,7 @@ body {
 }
 
 .color_white {
-  color: var(--global-color-color-extracted-2) !important;
+  color: var(--global-color-color-extracted-16) !important;
 }
 
 .color_half_white {
@@ -240,7 +246,7 @@ body {
 }
 
 .color_grey {
-  color: #343638;
+  color: var(--global-color-color-extracted-7);
 }
 
 .color_light_grey {
@@ -264,7 +270,7 @@ body {
 }
 
 .color_light_black {
-  color: #1f1f1f;
+  color: var(--global-color-color-extracted-12);
 }
 
 .color_blue {
@@ -303,8 +309,8 @@ body {
 
 .button_blue {
   padding: 12px 24px;
-  background-color: var(--global-color-color-extracted-14);
-  color: var(--global-color-color-extracted-2);
+  background-color: var(--global-color-color-extracted-65);
+  color: var(--global-color-color-extracted-16);
 }
 
 .button_grey {
@@ -509,7 +515,7 @@ body {
 }
 
 .header_vertical_border {
-  border-right: 1px solid var(--global-color-color-extracted-28);
+  border-right: 1px solid var(--global-color-color-extracted-146);
   height: 36px;
 }
 
@@ -8381,7 +8387,7 @@ body.modal-open {
     opacity: 0;
     width: 8px;
     height: 8px;
-    background-color: var(--global-color-color-extracted-14);
+    background-color: var(--global-color-color-extracted-65);
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
   }
@@ -8401,7 +8407,7 @@ body.modal-open {
   }
 
   .mobile_submenu {
-    color: var(--global-color-color-extracted-73);
+    color: var(--global-color-color-extracted-74);
   }
 
   .mobile_submenu_name {
